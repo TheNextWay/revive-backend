@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 
 const tokenSchema = new mongoose.Schema({
-  token: String
+  token: String,
+  point: Number,
+  name: String,
+  claimed: Boolean
 });
 
 const Token = mongoose.model('Token', tokenSchema);
